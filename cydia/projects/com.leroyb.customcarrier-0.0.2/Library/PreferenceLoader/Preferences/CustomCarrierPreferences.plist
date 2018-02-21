@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = "CustomCarrierPreferences";
+		cell = PSLinkCell;
+		detail = "CustomCarrierPreferencesListController";
+		icon = "CustomCarrier.png";
+		isController = 1;
+		label = CustomCarrier;
+	};
+}

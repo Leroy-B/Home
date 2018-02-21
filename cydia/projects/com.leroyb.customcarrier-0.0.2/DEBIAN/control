@@ -1,0 +1,10 @@
+Package: com.leroyb.customcarrier
+Name: CustomCarrier
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Leroy Bonventre
+Author: Leroy Bonventre
+Section: Tweaks
+Version: 0.0.2-1+debug
+Installed-Size: 160
