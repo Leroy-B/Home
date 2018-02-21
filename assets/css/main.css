@@ -1698,11 +1698,9 @@
 	}
 
     q {
-        color: white;
+        color: #ff751a;
         font-size: 14px;
         font-weight: bolder;
-        background-color: black;
-        background-size: auto;
 	}
 
     qu {
@@ -3445,6 +3443,7 @@
 
 .flex_box_100 {
     width: 100%;
+    background-color: #dddddd;
 }
 
 /* Main */
