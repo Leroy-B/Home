@@ -55,7 +55,6 @@ $(document).ready(function(){
 	
 	var yesterday = getYesterdaysDate();
     var yesterdayUNIX = new Date(yesterday).getTime() / 1000;
-    console.log(yesterdayUNIX);
 	
     $.ajax({
         url: 'https://min-api.cryptocompare.com/data/dayAvg?fsym=XMR&tsym=CHF&toTs='+yesterdayUNIX,
