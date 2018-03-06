@@ -28,7 +28,7 @@ $(document).ready(function(){
     var hashrate;
     var hashrate6HR;
     var percentage;
-    var delayInMilliseconds = 10000;
+    var delayInMilliseconds = 6000;
     /* VAR END */
     
     //###########################################################//
@@ -79,25 +79,17 @@ $(document).ready(function(){
     
     /* ETH HASHRATE START */
     $.ajax({
-        url: 'https://api.nanopool.org/v1/eth/reportedhashrate/b2c3fdcb08a168e8cba4aece86d2162745ecb61d',
-        dataType: 'json',
-        success: function(json) {
-
-	        hashrate = json.data;
-            
-			$("#hashrate").html(hashrate.toFixed(2)+' H/s');
-        }
-    });
-    
-    $.ajax({
         url: 'https://api.nanopool.org/v1/eth/avghashrate/b2c3fdcb08a168e8cba4aece86d2162745ecb61d',
         dataType: 'json',
         success: function(json) {
-		    hashrate6HR = json.data.h6;
-            $("#hashrate6HR").html(hashrate6HR.toFixed(2));
+
+	        hashrate = json.data.h1;
+            hashrate6HR = json.data.h6;
+            
+			$("#hashrate").html(hashrate.toFixed(2)+' H/s Ø '+hashrate6HR.toFixed(2));
         }
     });
-    /* MONERO HASHRATE END */
+    /* ETH HASHRATE END */
     
     //###########################################################//
     
@@ -164,7 +156,7 @@ $(document).ready(function(){
     /* ETH PROGRESS START*/
     var progressSelector = $(".progress-wrap");
 	
-	var delayInMilliseconds = 10000;
+	var delayInMilliseconds = 7000;
 	
 	setTimeout(function() {
 		
