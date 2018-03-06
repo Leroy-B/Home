@@ -47,6 +47,24 @@ $(document).ready(function(){
     
     //###########################################################//
     
+        /* ETH PRICE START*/
+    $.ajax({
+        url: 'https://api.coinbase.com/v2/prices/ETH-CHF/spot',
+        dataType: 'json',
+        success: function(json) {
+
+	        price = json.data.amount;
+			
+			if(price) { 
+	            console.log(price);
+	            $("#ethereum").html(price+" Fr.");
+            }
+        }
+    });
+    /* ETH PRICE END*/
+    
+    //###########################################################//
+    
     /* ETH BALANCE START */
     $.ajax({
         url: 'https://api.nanopool.org/v1/eth/balance/b2c3fdcb08a168e8cba4aece86d2162745ecb61d',
@@ -55,22 +73,11 @@ $(document).ready(function(){
 			
 	        balance = json.data;
 
-			if(balance) { 
+			console.log(balance);
+            balanceFranken = balance * price;
 	            
-	            console.log(balance);
-            
-	            balanceDollars = balance * price;
-	            
-	            var shortBalance = balance.toString().slice(0, -8);
-	            var shortBalanceDollars = balanceDollars.toString().slice(0, 5);
-	            
-	            $('#balance').html(shortBalance);
-	            $('#balanceDollars').html('$'+shortBalanceDollars);
-	            
-	            percentage = (balance / .05) * 100;
-	            console.log(percentage);
-            
-            }            
+            percentage = (balance / 1) * 100;
+            console.log(percentage+' percentage');           
         }
       }, delayInMilliseconds);
     /* ETH BALANCE END */
@@ -93,23 +100,6 @@ $(document).ready(function(){
     
     //###########################################################//
     
-    /* ETH PRICE START*/
-    $.ajax({
-        url: 'https://api.coinbase.com/v2/prices/ETH-CHF/spot',
-        dataType: 'json',
-        success: function(json) {
-
-	        price = json.data.amount;
-			
-			if(price) { 
-	            console.log(price);
-	            $("#ethereum").html(price+" Fr.");
-            }
-        }
-    });
-    /* ETH PRICE END*/
-    
-    //###########################################################//
     
     /* ETH PRICE YESTERDAY END*/
     $.ajax({
