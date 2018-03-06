@@ -56,7 +56,7 @@ $(document).ready(function(){
 	        price = json.data.amount;
 			
 			if(price) { 
-	            console.log(price);
+	            console.log(price+' price');
 	            $("#ethereum").html(price+" Fr.");
             }
         }
@@ -73,7 +73,7 @@ $(document).ready(function(){
 			
 	        balance = json.data;
 
-			console.log(balance);
+			console.log(balance+' balance');
             balanceFranken = balance * price;
 	            
             percentage = (balance / 1) * 100;
@@ -109,26 +109,26 @@ $(document).ready(function(){
 						
 		    yesterdayPrice = json.data.amount;
 	
-			var delayInMilliseconds = 8000;
+			var delayInMilliseconds = 6000;
 			
 			setTimeout(function() {
 				
 				if(yesterdayPrice) { 
 		            
-		            console.log(yesterday+': '+yesterdayPrice);
+		            console.log(yesterday+': '+yesterdayPrice +' yesterday');
 	            
 					priceChange = ( (100 - (yesterdayPrice / price) * 100) );
 					var priceChange = Math.round( priceChange * 10 ) / 10;
 		            
 		            if (priceChange > 0) {
 			            $("#arrow").addClass('arrowUp');
-			            console.log(priceChange);
+			            console.log(priceChange+' priceChange');
 			            $("#arrow").html(priceChange);
 			            $("#arrow").append('%');
 		            } else if (priceChange < 0) {
 			            $("#arrow").addClass('arrowDown');
 						priceChange = priceChange * (-1);
-			            console.log(priceChange);
+			            console.log(priceChange+' priceChange');
 			            $("#arrow").html(priceChange);
 			            $("#arrow").append('%');
 		            } else {
@@ -146,7 +146,7 @@ $(document).ready(function(){
     /* ETH PROGRESS START*/
     var progressSelector = $(".progress-wrap");
 	
-	var delayInMilliseconds = 7000;
+	var delayInMilliseconds = 6000;
 	
 	setTimeout(function() {
 		
