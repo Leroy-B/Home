@@ -93,7 +93,7 @@ $(document).ready(function(){
 	        hashrate = json.data.h1;
             hashrate6HR = json.data.h6;
             
-			$("#hashrate").html(hashrate.toFixed(2)+' H/s Ø '+hashrate6HR.toFixed(2));
+			$("#hashrate").html(hashrate.toFixed(2)+' H/s  Ø '+hashrate6HR.toFixed(2));
         }
     });
     /* ETH HASHRATE END */
