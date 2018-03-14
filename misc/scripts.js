@@ -14,8 +14,8 @@ $(document).ready(function(){
 	var delayInMilliseconds = 6000;
 	
 	setTimeout(function() {
-	    
-	    reload_js('https://leroy-b.github.io/Home/misc/scripts.js');
+	    //https://leroy-b.github.io/Home/misc/
+	    reload_js('scripts.js');
 	
 	}, delayInMilliseconds);
 
@@ -37,12 +37,12 @@ $(document).ready(function(){
     
         /* Currency PRICE START*/
     $.ajax({
-        url: 'https://api.coinmarketcap.com/v1/ticker/'+currency+'/?convert=CHF',
+        url: 'http://coincap.io/page/XMR',
         dataType: 'json',
         success: function(json) {
 
-	        price = json.data.price_chf;
-            priceChange24HR = json.data.percent_change_24h;
+	        price = json.data.price_eur;
+            priceChange24HR = json.data.cap24hrChange;
 			
 			if(price) { 
 	            console.log(price+' price');
