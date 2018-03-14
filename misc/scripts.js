@@ -41,12 +41,12 @@ $(document).ready(function(){
         dataType: 'json',
         success: function(json) {
 
-	        price = json.data.price_eur;
-            priceChange24HR = json.data.cap24hrChange;
-			
+	        price = json.price_usd;
+            priceChange24HR = json.cap24hrChange;
+            
 			if(price) { 
-	            console.log(price+' price');
-	            $("#"+currency).html(price+" Fr.");
+	            console.log(price.toFixed(1)+' price');
+	            $("#"+currency).html(price.toFixed(1)+" CHF");
             }
             
             if (priceChange24HR > 0) {
