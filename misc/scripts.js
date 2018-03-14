@@ -41,8 +41,8 @@ $(document).ready(function(){
         dataType: 'json',
         success: function(json) {
 
-	        price = json.price_chf;
-            priceChange24HR = json.percent_change_24h;
+	        price = json.data.price_chf;
+            priceChange24HR = json.data.percent_change_24h;
 			
 			if(price) { 
 	            console.log(price+' price');
