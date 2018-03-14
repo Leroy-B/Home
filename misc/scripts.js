@@ -51,13 +51,13 @@ $(document).ready(function(){
             
             if (priceChange24HR > 0) {
                 $("#arrow").addClass('arrowUp');
-                console.log(priceChange24HR+' priceChange');
+                console.log(priceChange24HR+' priceChange24HR');
                 $("#arrow").html(priceChange24HR);
                 $("#arrow").append('%');
             } else if (priceChange24HR < 0) {
                 $("#arrow").addClass('arrowDown');
                 priceChange24HR = priceChange24HR * (-1);
-                console.log(priceChange24HR+' priceChange');
+                console.log(priceChange24HR+' priceChange24HR');
                 $("#arrow").html(priceChange24HR);
                 $("#arrow").append('%');
             } else {
