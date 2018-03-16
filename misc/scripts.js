@@ -15,7 +15,7 @@ $(document).ready(function(){
 	
 	setTimeout(function() {
 	    //https://leroy-b.github.io/Home/misc/
-	    reload_js('scripts.js');
+	    reload_js('https://leroy-b.github.io/Home/misc/scripts.js');
 	
 	}, delayInMilliseconds);
 
