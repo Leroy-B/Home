@@ -1,0 +1,31 @@
+Package: com.leroy-b.nopasscodebuttonlightup
+Version: 0.0.1-1
+Architecture: iphoneos-arm
+Maintainer: Leroy-B <myemail>
+Depends: mobilesubstrate
+Filename: deb//com.leroyb.nopasscodebuttonlightup-0.0.1-1.deb
+Size: 3130 Bytes
+MD5Sum: 02C00613CE0C3F3B9660E3B00F696E57
+SHA1: 4638980272C1C2CC0009DEEC3431BA2877208C53
+SHA256: CA843A94E38652F02AF9E08845017FA715CD10D1327292EF8C3D053E8E2C7A34
+Section: Tweaks
+Description: Prevents the passcode buttons from lighting up.
+Author: Leroy-B <myemail>
+Depiction: https://leroy-b.github.io/Home/description/NoPasscodeButtonLightUp.html
+Name: NoPasscodeButtonLightUp
+
+Package: com.leroyb.customcarrier
+Version: 0.0.2
+Architecture: iphoneos-arm
+Maintainer: Leroy-B <myemail>
+Depends: mobilesubstrate
+Filename: deb//com.leroyb.customcarrier-0.0.2.deb
+Size: 12292 Bytes
+MD5Sum: A245D851E91E9171BE4A0EC37DF668A9
+SHA1: 116802093AAAEC4B146A324E3E700CA2AC9CCC17
+SHA256: A89027BC322CC25ED2D85311FCAD29D0715BBE3A8DA885FD4F0FF39EF49F58A1
+Section: Tweaks
+Description: This package lets you use a custom carrier string.
+Author: Leroy-B <myemail>
+Depiction: https://leroy-b.github.io/Home/description/CustomCarrier.html
+Name: CustomCarrier
