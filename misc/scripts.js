@@ -11,7 +11,7 @@ $(document).ready(function(){
         $('<script>').attr('src', src).appendTo('head');
     }
 	
-	var delayInMilliseconds = 6000;
+	var delayInMilliseconds = 10000;
 	
 	setTimeout(function() {
 	    //https://leroy-b.github.io/Home/misc/
@@ -37,28 +37,29 @@ $(document).ready(function(){
     
         /* Currency PRICE START*/
     $.ajax({
-        url: 'http://coincap.io/page/XMR',
+        type: "GET",
+        url: 'https://api.coinmarketcap.com/v1/ticker/monero/?convert=CHF',
         dataType: 'json',
         success: function(json) {
 
-	        price = json.price_usd;
-            priceChange24HR = json.cap24hrChange;
+	        price = result[0].price_chf;
+            percentChange24HR = result[0].percent_change_24h;
             
 			if(price) { 
 	            console.log(price.toFixed(1)+' price');
 	            $("#"+currency).html(price.toFixed(1)+" CHF");
             }
             
-            if (priceChange24HR > 0) {
+            if (percentChange24HR > 0) {
                 $("#arrow").addClass('arrowUp');
-                console.log(priceChange24HR+' priceChange24HR');
-                $("#arrow").html(priceChange24HR);
+                console.log(percentChange24HR+' percentChange24HR');
+                $("#arrow").html(percentChange24HR);
                 $("#arrow").append('%');
-            } else if (priceChange24HR < 0) {
+            } else if (percentChange24HR < 0) {
                 $("#arrow").addClass('arrowDown');
-                priceChange24HR = priceChange24HR * (-1);
-                console.log(priceChange24HR+' priceChange24HR');
-                $("#arrow").html(priceChange24HR);
+                percentChange24HR = percentChange24HR * (-1);
+                console.log(percentChange24HR+' percentChange24HR');
+                $("#arrow").html(percentChange24HR);
                 $("#arrow").append('%');
             } else {
                 
