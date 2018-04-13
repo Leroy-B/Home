@@ -1619,7 +1619,7 @@
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 633px;
 		}
 
 	}
@@ -3328,7 +3328,7 @@
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0);
+						background-color: rgba(210, 210, 210, 0.8);
 					}
 
 					#nav ul li a.active {
@@ -3357,7 +3357,7 @@
         @media screen and (max-width: 736px) {
 
 			#nav {
-				max-width: calc(100% - 2em);
+				max-width: calc(100% - -15em);
 			}
 
 				#nav + #main {
@@ -3393,7 +3393,7 @@
         @media screen and (max-width: 375px) {
 
 			#nav {
-				width: 100%;
+				width: 160%;
 			}
 
 				#nav + #main {
