@@ -1,4 +1,17 @@
 $(document).ready(function(){
+
+	//config var
+	if(textColor == 'black'){
+	document. getElementsByClassName("#textColorClass").style.color = 'black';
+		
+	}
+	if(textColor == 'white'){
+document.getElementsByClassName("#textColorClass").style.color = 'white';
+	}
+	if(textColor == 'orange'){
+		document. getElementsByClassName("#textColorClass").style.color = 'orange';
+	}
+	//document.getElementById("Widget");
     
 	$.ajaxSetup({
 	    beforeSend: function(xhr) {
@@ -31,7 +44,7 @@ $(document).ready(function(){
     var percentage;
     var payoutLimit = 0.2;
     var delayInMilliseconds = 10000;
-    var currency = "monero";//static in html
+    var currency = "currency";//static in html
     /* VAR END */
     
     //###########################################################//
