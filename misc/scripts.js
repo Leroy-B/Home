@@ -72,7 +72,7 @@ $(document).ready(function(){
     
     /* Currency BALANCE START */
     $.ajax({
-        url: 'https://api.nanopool.org/v1/eth/balance/b2c3fdcb08a168e8cba4aece86d2162745ecb61d',
+        url: 'https://api.nanopool.org/v1/eth/balance/26250a05D2d8A63235FCF6b9c1D60ab944F6c834',
         dataType: 'json',
         success: function(json) {
 			
@@ -90,8 +90,10 @@ $(document).ready(function(){
     //###########################################################//
     
     /* Currency HASHRATE START */
+    //privat: b2c3fdcb08a168e8cba4aece86d2162745ecb61d
+    //rig: 26250a05D2d8A63235FCF6b9c1D60ab944F6c834
     $.ajax({
-        url: 'https://api.nanopool.org/v1/eth/avghashrate/b2c3fdcb08a168e8cba4aece86d2162745ecb61d',
+        url: 'https://api.nanopool.org/v1/eth/avghashrate/26250a05D2d8A63235FCF6b9c1D60ab944F6c834',
         dataType: 'json',
         success: function(json) {
 
