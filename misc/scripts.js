@@ -1,27 +1,21 @@
-function getElementsById(ids) {
-    var idList = ids.split(" ");
-    var results = [], item;
-    for (var i = 0; i < idList.length; i++) {
-        item = document.getElementById(idList[i]);
-        if (item) {
-            results.push(item);
-        }
-    }
-    return(results);
-}
-
 $(document).ready(function(){
 
 	//config var
 	if(textColor == 'black'){
-	document. getElementsById("hashrate wallet currency").style.color = 'black';
+	document. getElementById("hashrate").style.color = 'black';
+document. getElementById("currency").style.color = 'black';
+document. getElementById("wallet").style.color = 'black';
 		
 	}
 	if(textColor == 'white'){
-document. getElementsById("hashrate wallet currency").style.color = 'white';
+document. getElementById("hashrate").style.color = 'white';
+document. getElementById("currency").style.color = 'white';
+document. getElementById("wallet").style.color = 'white';
 	}
 	if(textColor == 'orange'){
-		document. getElementsById("hashrate wallet currency").style.color = 'orange';
+		document. getElementById("hashrate").style.color = 'orange';
+document. getElementById("currency").style.color = 'orange';
+document. getElementById("wallet").style.color = 'orange';
 	}
 	//document.getElementById("Widget");
     
