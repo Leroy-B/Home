@@ -1,21 +1,25 @@
+var getElementsByIds = function(ids){
+	if(ids == undefined || (typeof ids != 'object') || (ids.length == 0)){
+		return null;
+	}
+	var elems = [];
+	for(var i = 0; i < ids.length; i++){
+		elems[i] = document.getElementById(ids[i]);
+	}
+	return elems;	
+}
+
 $(document).ready(function(){
 
 	//config var
 	if(textColor == 'black'){
-	document. getElementById("hashrate").style.color = 'black';
-document. getElementById("currency").style.color = 'black';
-document. getElementById("wallet").style.color = 'black';
-		
+        document.getElementsByIds("hashrate", "currency", "wallet").style.color = 'black';
 	}
 	if(textColor == 'white'){
-document. getElementById("hashrate").style.color = 'white';
-document. getElementById("currency").style.color = 'white';
-document. getElementById("wallet").style.color = 'white';
+        document.getElementsByIds("hashrate", "currency", "wallet").style.color = 'white';
 	}
 	if(textColor == 'orange'){
-		document. getElementById("hashrate").style.color = 'orange';
-document. getElementById("currency").style.color = 'orange';
-document. getElementById("wallet").style.color = 'orange';
+        document.getElementsByIds("hashrate", "currency", "wallet").style.color = 'orange';
 	}
 	//document.getElementById("Widget");
     
