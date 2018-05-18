@@ -30,13 +30,13 @@ $(document).ready(function(){
     var hashrate12HR;
     var percentage;
     var payoutLimit = 0.2;
-    var delayInMilliseconds = 6000;
+    var delayInMilliseconds = 10000;
     var currency = "monero";//static in html
     /* VAR END */
     
     //###########################################################//
     
-        /* Currency PRICE START*/
+    /* Currency PRICE START*/
     $.ajax({
         type: "GET",
         url: 'https://api.coinmarketcap.com/v1/ticker/monero/?convert=CHF',
@@ -66,7 +66,7 @@ $(document).ready(function(){
                 
             }
         }
-    });
+    }, delayInMilliseconds);
     /* Currency PRICE END*/
     
     //###########################################################//
@@ -88,7 +88,7 @@ $(document).ready(function(){
             
             $("#wallet").html(percentage.toFixed(1)+'%');
         }
-      }, delayInMilliseconds);
+    }, delayInMilliseconds);
     /* Currency BALANCE END */
     
     //###########################################################//
@@ -115,8 +115,6 @@ $(document).ready(function(){
     
     /* Currency PROGRESS START*/
     var progressSelector = $(".progress-wrap");
-	
-	var delayInMilliseconds = 6000;
 	
 	setTimeout(function() {
 		
