@@ -29,6 +29,7 @@ $(document).ready(function(){
     var hashrate1HR;
     var hashrate12HR;
     var percentage;
+    var payoutLimit = 0.2;
     var delayInMilliseconds = 6000;
     var currency = "monero";//static in html
     /* VAR END */
@@ -81,7 +82,8 @@ $(document).ready(function(){
             console.log(balance+' balance');
             console.log(balanceFranken+' balanceFranken');
 	            
-            percentage = (balance / .1) * 100;
+            percentage = (balance / payoutLimit) * 100;
+            console.log(payoutLimit+' payoutLimit');
             console.log(percentage+' percentage');           
         }
       }, delayInMilliseconds);
