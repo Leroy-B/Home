@@ -84,7 +84,9 @@ $(document).ready(function(){
 	            
             percentage = (balance / payoutLimit) * 100;
             console.log(payoutLimit+' payoutLimit');
-            console.log(percentage+' percentage');           
+            console.log(percentage+' percentage');
+            
+            $("#wallet").html(percentage.toFixed(1));
         }
       }, delayInMilliseconds);
     /* Currency BALANCE END */
