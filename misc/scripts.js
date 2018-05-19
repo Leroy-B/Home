@@ -1,27 +1,87 @@
-var getElementsByIds = function(ids){
-	if(ids == undefined || (typeof ids != 'object') || (ids.length == 0)){
-		return null;
-	}
-	var elems = [];
-	for(var i = 0; i < ids.length; i++){
-		elems[i] = document.getElementById(ids[i]);
-	}
-	return elems;	
+function getElementsById(ids) {
+    var idList = ids.split(" ");
+    var results = [], item;
+    for (var i = 0; i < idList.length; i++) {
+        item = document.getElementById(idList[i]);
+        if (item) {
+            results.push(item);
+        }
+    }
+    return(results);
 }
 
 $(document).ready(function(){
-
+    
 	//config var
-	if(textColor == 'black'){
-        document.getElementsByIds("hashrate", "currency", "wallet").style.color = 'black';
-	}
-	if(textColor == 'white'){
-        document.getElementsByIds("hashrate", "currency", "wallet").style.color = 'white';
-	}
-	if(textColor == 'orange'){
-        document.getElementsByIds("hashrate", "currency", "wallet").style.color = 'orange';
-	}
-	//document.getElementById("Widget");
+    
+    var textColor;
+    
+    switch(textColor){
+        case 'black':
+            $(getElementsById("hashrate currency wallet")).css("color", "black");
+            break;
+        case 'white':
+            $(getElementsById("hashrate currency wallet")).css("color", "white");
+            break;
+        case 'orange':
+            $(getElementsById("hashrate currency wallet")).css("color", "orange");
+            break;
+        default:
+            $(getElementsById("hashrate currency wallet")).css("color", "black");
+            break;
+    }
+    
+    var xmrURL = 'img/xmr.png';
+    var ethURL = 'img/eth.png';
+    var btcURL = 'img/btc.png';
+    
+    var cryptoCurrency;
+    console.log(cryptoCurrency+' cryptoCurrency');
+    
+    switch(cryptoCurrency){
+        case 'XMR':
+            $("#currency").css("background", "url('"+xmrURL+"') 0 2px no-repeat");
+            $("#currency").css("background-size", "16px 16px");
+            $("#currency").css("padding-left", "18px");
+            //$('currency').css('background', 'url("' + xmrURL + '") 0 2px no-repeat');
+            break;
+        case 'ETH':
+            $("#currency").css("background", "url('"+ethURL+"') 0 2px no-repeat");
+            $("#currency").css("background-size", "16px 16px");
+            $("#currency").css("padding-left", "18px");
+            //$('currency').css('background', 'url("' + ethURL + '") 0 2px no-repeat');
+            break;
+        case 'BTC':
+            $("#currency").css("background", "url('"+btcURL+"') 0 2px no-repeat");
+            $("#currency").css("background-size", "16px 16px");
+            $("#currency").css("padding-left", "18px");
+            //$('currency').css('background', 'url("' + btcURL + '") 0 2px no-repeat');
+            break;
+        default:
+            $("#currency").css("background", "url('"+xmrURL+"') 0 2px no-repeat");
+            $("#currency").css("background-size", "16px 16px");
+            $("#currency").css("padding-left", "18px");
+            //$('currency').css('background', 'url("' + btcURL + '") 0 2px no-repeat');
+            break;
+    }
+    
+    var progressbarColor;
+    console.log(progressbarColor+' progressbarColor');
+    
+    switch(progressbarColor){
+        case 'black':
+            $(".progress-bar").css("background", "#000000");
+            break;
+        case 'white':
+            $(".progress-bar").css("background", "#ffffff");
+            break;
+        case 'orange':
+            $(".progress-bar").css("background", "#ff8000");
+            break;
+        default:
+            $(".progress-bar").css("background", "#000000");
+            break;
+    }
     
 	$.ajaxSetup({
 	    beforeSend: function(xhr) {
@@ -53,8 +113,7 @@ $(document).ready(function(){
     var hashrate12HR;
     var percentage;
     var payoutLimit = 0.2;
-    var delayInMilliseconds = 10000;
-    var currency = "currency";//static in html
+    var delayInMilliseconds = 10000;//10000 == ten sec
     /* VAR END */
     
     //###########################################################//
@@ -71,7 +130,7 @@ $(document).ready(function(){
             
 			if(price) { 
 	            console.log(price.toFixed(1)+' price');
-	            $("#"+currency).html(price.toFixed(1)+" CHF");
+	            $("#currency").html(price.toFixed(1)+" CHF");
             }
             
             if (percentChange24HR > 0) {
@@ -109,7 +168,7 @@ $(document).ready(function(){
             console.log(payoutLimit+' payoutLimit');
             console.log(percentage+' percentage');
             
-            $("#wallet").html(percentage.toFixed(1)+'%');
+            $("#wallet").html(percentage.toFixed(2)+'%');
         }
     }, delayInMilliseconds);
     /* Currency BALANCE END */
