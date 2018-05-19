@@ -13,9 +13,6 @@ function getElementsById(ids) {
 $(document).ready(function(){
     
 	//config var
-    
-    var textColor;
-    
     switch(textColor){
         case 'black':
             $(getElementsById("hashrate currency wallet")).css("color", "black");
@@ -26,13 +23,11 @@ $(document).ready(function(){
         case 'orange':
             $(getElementsById("hashrate currency wallet")).css("color", "orange");
             break;
+        default:
+            $(getElementsById("hashrate currency wallet")).css("color", "black");
+            break;
     }
     
-    var xmrURL = 'img/xmr.png';
-    var ethURL = 'img/eth.png';
-    var btcURL = 'img/btc.png';
-    
-    var cryptoCurrency;
     console.log(cryptoCurrency+' cryptoCurrency');
     
     switch(cryptoCurrency){
@@ -54,9 +49,14 @@ $(document).ready(function(){
             $("#currency").css("padding-left", "18px");
             //$('currency').css('background', 'url("' + btcURL + '") 0 2px no-repeat');
             break;
+        default:
+            $("#currency").css("background", "url('"+xmrURL+"') 0 2px no-repeat");
+            $("#currency").css("background-size", "16px 16px");
+            $("#currency").css("padding-left", "18px");
+            //$('currency').css('background', 'url("' + btcURL + '") 0 2px no-repeat');
+            break;
     }
     
-    var progressbarColor;
     console.log(progressbarColor+' progressbarColor');
     
     switch(progressbarColor){
@@ -68,6 +68,9 @@ $(document).ready(function(){
             break;
         case 'orange':
             $(".progress-bar").css("background", "#ff8000");
+            break;
+        default:
+            $(".progress-bar").css("background", "#000000");
             break;
     }
     
