@@ -22,10 +22,10 @@ $(document).ready(function(){
             break;
         case 'orange':
             $(getElementsById("hashrate currency wallet")).css("color", "orange");
-            break;
+            break;/*
         default:
             $(getElementsById("hashrate currency wallet")).css("color", "black");
-            break;
+            break;*/
     }
     
     console.log(cryptoCurrency+' cryptoCurrency');
@@ -48,13 +48,13 @@ $(document).ready(function(){
             $("#currency").css("background-size", "16px 16px");
             $("#currency").css("padding-left", "18px");
             //$('currency').css('background', 'url("' + btcURL + '") 0 2px no-repeat');
-            break;
+            break;/*
         default:
             $("#currency").css("background", "url('"+xmrURL+"') 0 2px no-repeat");
             $("#currency").css("background-size", "16px 16px");
             $("#currency").css("padding-left", "18px");
             //$('currency').css('background', 'url("' + btcURL + '") 0 2px no-repeat');
-            break;
+            break;*/
     }
     
     console.log(progressbarColor+' progressbarColor');
@@ -68,10 +68,10 @@ $(document).ready(function(){
             break;
         case 'orange':
             $(".progress-bar").css("background", "#ff8000");
-            break;
+            break;/*
         default:
             $(".progress-bar").css("background", "#000000");
-            break;
+            break;*/
     }
     
 	$.ajaxSetup({
