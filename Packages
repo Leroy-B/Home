@@ -1,0 +1,32 @@
+Package: com.leroy.customcarrier
+Version: 1.0-1+debug
+Architecture: iphoneos-arm
+Maintainer: LeroyB
+Installed-Size: 516
+Depends: mobilesubstrate
+Filename: ./deb/CustomCarrier.deb
+Size: 249808
+MD5sum: bf186076baddff19254044abaa6f2467
+SHA1: 42d76c82204785bf2e0c5ca2a18657f4b9d3cf76
+SHA256: ffbf8b599897096ff0988a09fbc8d924e9b216f15e319824f5bab3ac585cd27c
+Section: Tweaks
+Description: Change the carrier string in the statusbar.
+Author: LeroyB
+Name: CustomCarrier
+
+Package: com.leroy.nopasscodebuttonlightup
+Version: 1.0-1+debug
+Architecture: iphoneos-arm
+Maintainer: LeroyB
+Installed-Size: 136
+Depends: mobilesubstrate
+Filename: ./deb/NoPasscodeButtonLightup.deb
+Size: 4388
+MD5sum: 74b6e715fc3e6ef029880c8b961daceb
+SHA1: 2e1e16b4e1113311f7c498397ebb089a76b77fcb
+SHA256: 6765cdfb1e68a176696837a493f2b506648e5d9880f90bda0ef8dee1d7ae7078
+Section: Tweaks
+Description: Disable the lightup of the passcode button on the lockscreen.
+Author: LeroyB
+Name: NoPasscodeButtonLightup
+
