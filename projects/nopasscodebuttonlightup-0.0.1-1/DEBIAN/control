@@ -1,9 +1,0 @@
-Package: com.leroy-b.nopasscodebuttonlightup
-Name: nopasscodebuttonlightup
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Leroy-B
-Author: Leroy-B
-Section: Tweaks
-Version: 0.0.1-1
