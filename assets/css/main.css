@@ -2773,7 +2773,7 @@
 		table th {
 			font-size: 0.9em;
 			font-weight: 400;
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 0 0.2em 0.2em 0.2em;
 			text-align: left;
 		}
 
@@ -3535,6 +3535,8 @@
 				background-color: #8cc9f0;
 				color: #ffffff !important;
 				box-shadow: none;
+                margin-top: 5px;
+                margin-bottom: 5px;
 			}
 
 				#main input[type="submit"].special:hover,

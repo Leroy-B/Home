@@ -1,0 +1,9 @@
+Package: com.leroy.nopasscodebuttonlightup
+Name: NoPasscodeButtonLightup
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Disable the lightup of the passcode button on the lockscreen.
+Maintainer: LeroyB
+Author: LeroyB
+Section: Tweaks

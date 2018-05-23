@@ -1,0 +1,9 @@
+Package: com.leroy.customcarrier
+Name: CustomCarrier
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Change the carrier string in the statusbar.
+Maintainer: LeroyB
+Author: LeroyB
+Section: Tweaks

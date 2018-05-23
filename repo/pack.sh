@@ -1,6 +1,6 @@
 rm -r *.bz2
 cd deb
-rm -r deb/*.deb
+rm -r *.deb
 cd ../projects
 
 dpkg-deb -b -Zgzip "CustomCarrier"
