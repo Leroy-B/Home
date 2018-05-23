@@ -2,7 +2,8 @@ Package: com.leroy.customcarrier
 Name: CustomCarrier
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Description: https://leroy-b.github.io/Home/repo/description/CustomCarrier.html
+Description: This package lets you use a custom carrier string, configured from settings.app.
+Depiction: https://leroy-b.github.io/Home/repo/description/CustomCarrier.html
 Maintainer: LeroyB
 Author: LeroyB
 Section: Tweaks
