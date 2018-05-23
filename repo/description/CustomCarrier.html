@@ -5,6 +5,8 @@
     <title>CustomCarrier</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
   </head>
   <body>
     <main class="depiction" id="content" role="main">
@@ -30,5 +32,56 @@
           
       </ul>
     </main>
+      <hr>
+      <footer id="content">
+        <h2 id="new">Repository INFO</h2>
+          <ul>
+              <li><p>I made this repository to share my packages via Cydia. Packages may contain errors.</p></li>
+          </ul>
+        <h2>LINKS</h2>
+          <ul>
+            <li><a href="https://twitter.com/IDEK_a_Leroy" class="button">Visit my Twitter</a></li>
+            <li><form align="center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YFSWZBQM8V3C8">
+                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                Donate via PayPal</form>
+            </li>
+            <li><div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+     data-address="42jBMo7NpyYUoPU3qdu7x6cntT3ez2da5TxKTwZVX9eZfwBA6XzeQEFcTxBukNUYyaGtgvdKtLyz72udsnRo3hFhLYPo37L"
+     data-shared="false">
+    <div class="blockchain stage-begin">
+        <img src="../../images/donateXMR.png"/>
+    </div>
+    <div class="blockchain stage-loading" style="text-align:center">
+    </div>
+    <div class="blockchain stage-ready">
+         <p align="center">Please donate to this Monero address: <b>[[address]]</b></p>
+    </div>
+</div></li>
+              <li><div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+     data-address="1EZATpr8i4N5XaR9bfCwPHAK6DB2s19uwN"
+     data-shared="false">
+    <div class="blockchain stage-begin">
+        <img src="../../images/donateBTC.png"/>
+    </div>
+    <div class="blockchain stage-loading" style="text-align:center">
+        <img src="https://blockchain.info/Resources/loading-large.gif"/>
+    </div>
+    <div class="blockchain stage-ready">
+         <p align="center">Please donate to this Bitcoin address: <b>[[address]]</b></p>
+         <p align="center" class="qr-code"></p>
+    </div>
+    <div class="blockchain stage-paid">
+         Donation of <b>[[value]] BTC</b> Received. Thank You.
+    </div>
+    <div class="blockchain stage-error">
+        <font color="red">[[error]]</font>
+    </div>
+</div></li>
+          </ul>
+      </footer>
   </body>
 </html>
+
