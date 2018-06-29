@@ -5,6 +5,7 @@ cd ../projects
 
 dpkg-deb -b -Zgzip "CustomCarrier"
 dpkg-deb -b -Zgzip "NoPasscodeButtonLightup"
+dpkg-deb -b -Zgzip "CustomSBIconList"
 
 mv *.deb ../deb
 cd ..

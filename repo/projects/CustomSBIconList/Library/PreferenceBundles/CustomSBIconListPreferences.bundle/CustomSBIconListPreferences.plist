@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>title</key>
+		<string>CustomSBIconList</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false/>
+				<key>defaults</key>
+				<string>com.leroy.CustomSBIconListPreferences</string>
+				<key>key</key>
+				<string>toggleSwitch</string>
+				<key>label</key>
+				<string>Enable tweak</string>
+			</dict>
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>placeholder</key>
+				<string>margin Top</string>
+				<key>defaults</key>
+				<string>com.leroy.CustomSBIconListPreferences</string>
+				<key>key</key>
+				<string>marginTopPrefValue</string>
+				<key>label</key>
+				<string>Num value margin top:</string>
+			</dict>
+			<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>placeholder</key>
+				<string>margin Top</string>
+				<key>defaults</key>
+				<string>com.leroy.CustomSBIconListPreferences</string>
+				<key>key</key>
+				<string>marginLeftPrefValue</string>
+				<key>label</key>
+				<string>Num value margin left:</string>
+			</dict>
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>All my tweaks are open sourced on GitHub</string>
+			</dict>
+			<dict>
+				<key>cell</key>
+				<string>PSButtonCell</string>
+				<key>icon</key>
+				<string>Twitter</string>
+				<key>label</key>
+				<string>Follow me on Twitter!</string>
+				<key>alignment</key>
+				<integer>2</integer>
+				<key>action</key>
+				<string>getTwitterURL</string>
+			</dict>
+		</array>
+	</dict>
+</plist>
