@@ -1,9 +1,11 @@
 Package: com.leroy.customsbiconlist
 Name: CustomSBIconList
 Depends: mobilesubstrate
-Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Allows moving the icon list on the homescreen.
+Depiction: https://leroy-b.github.io/Home/repo/description/CustomSBIconList.html
 Maintainer: LeroyB
 Author: LeroyB
 Section: Tweaks
+Version: 2.0.2
+Installed-Size: 392
