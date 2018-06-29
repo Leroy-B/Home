@@ -1,0 +1,10 @@
+{
+  entry = {
+    bundle = CustomSBIconListPreferences;
+    cell = PSLinkCell;
+    detail = CustomSBIconListPreferencesListController;
+    icon = CustomSBIconList.png;
+    isController = 1;
+    label = CustomSBIconList;
+  };
+}

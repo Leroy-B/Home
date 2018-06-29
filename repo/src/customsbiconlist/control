@@ -1,0 +1,9 @@
+Package: com.leroy.customsbiconlist
+Name: CustomSBIconList
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: LeroyB
+Author: LeroyB
+Section: Tweaks
