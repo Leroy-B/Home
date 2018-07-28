@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>settings</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>enableTweak</string>
+			<key>label</key>
+			<string>Enable tweak</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Choose the position of the Control Center. For custom values, select 'Custom' above and use the input fields below.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>posPrefChoice</string>
+			<key>validValues</key>
+			<array>
+				<string>Bottom</string>
+				<string>Midpoint</string>
+				<string>Top</string>
+				<string>Above Dock</string>
+				<string>Custom</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Bottom</string>
+				<string>Midpoint</string>
+				<string>Top</string>
+				<string>Above Dock</string>
+				<string>Custom</string>
+			</array>
+			<key>alignment</key>
+			<string>4</string>
+			<key>default</key>
+			<string>Midpoint</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>The top left part of the screen is point: y = 0, x = 0</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>y</string>
+			<key>default</key>
+			<string></string>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>posPrefY</string>
+			<key>label</key>
+			<string>Custom 'y' value:</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>x</string>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>posPrefX</string>
+			<key>label</key>
+			<string>Custom 'x' value:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Choose the size of the Control Center. For custom values, select 'Custom' above and use the input fields below.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>sizePrefChoice</string>
+			<key>validValues</key>
+			<array>
+				<string>Full</string>
+				<string>Half</string>
+				<string>Custom</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Full</string>
+				<string>Half</string>
+				<string>Custom</string>
+			</array>
+			<key>alignment</key>
+			<string>3</string>
+			<key>default</key>
+			<string>Half</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>If you're not sure about the default values of your device, use the button below!</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>height</string>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>sizePrefH</string>
+			<key>label</key>
+			<string>Custom 'height' value:</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.leroy.CustomCCPreferences/preferencesChanged</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>width</string>
+			<key>defaults</key>
+			<string>com.leroy.CustomCCPreferences</string>
+			<key>key</key>
+			<string>sizePrefW</string>
+			<key>label</key>
+			<string>Custom 'width' value:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>actions</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Show your default screen sizes!</string>
+			<key>action</key>
+			<string>printInfo</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Apply settings and respring!</string>
+			<key>action</key>
+			<string>respring</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>infos</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>paypal.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Donate via PayPal :)</string>
+			<key>action</key>
+			<string>showPayPal</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>bitcoin.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Donate via Bitcons :)</string>
+			<key>action</key>
+			<string>showBitcoin</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Send me a message @IDEK_a_Leroy</string>
+			<key>action</key>
+			<string>showTwitter</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>github.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Source Code</string>
+			<key>action</key>
+			<string>showSourceCode</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CustomCC</string>
+</dict>
+</plist>

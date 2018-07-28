@@ -3,7 +3,7 @@ Name: NoPasscodeButtonLightup
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: Prevents the passcode buttons from lighting up.
-Depiction: https://leroy-b.github.io/Home/repo/description/NoPasscodeButtonLightup.html
+Depiction: https://leroy-b.github.io/home/repo/description/NoPasscodeButtonLightup.html
 Maintainer: LeroyB
 Author: LeroyB
 Section: Tweaks
