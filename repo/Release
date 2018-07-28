@@ -1,8 +1,8 @@
-Origin: A repository by Leroy
-Label: A Repository by Leroy
+Origin: A beta repository by Leroy
+Label: A beta repository by Leroy
 Suite: stable
-Version: 1.2
+Version: 0.1
 Codename: myrepo
 Architectures: iphoneos-arm
 Components: main
-Description: This is a repository to make my tweaks available in Cydia.
+Description: This is a beta repository to make my tweaks available in Cydia.
