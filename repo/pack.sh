@@ -6,6 +6,7 @@ cd ../projects
 dpkg-deb -b -Zgzip "CustomCC"
 dpkg-deb -b -Zgzip "NoPasscodeButtonLightup"
 dpkg-deb -b -Zgzip "CustomSBIconList"
+dpkg-deb -b -Zgzip "AlwaysRemindMe"
 
 mv *.deb ../deb
 cd ..
