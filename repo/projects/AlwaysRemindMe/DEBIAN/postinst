@@ -1,4 +1,3 @@
 #!/bin/bash
-COL_GREEN="<style>*{color:green;}</style>"
-COL_RESET="<style>*{color:white;}</style>"
-echo -e $COL_GREEN"Thank you for installing AlwaysRemindMe :)"$COL_GREEN
+THANKS="<style>.myClass{color:green;}</style><span class='myClass'>Thank you for installing AlwaysRemindMe :)</span>"
+echo -e $THANKS
