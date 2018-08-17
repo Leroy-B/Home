@@ -5,4 +5,4 @@ black=`tput setaf 0`
 wbg=`tput setab 7`
 reset=`tput sgr0`
 
-echo -n "${black}${wbg}Thank you for installing AlwaysRemindMe :)${reset}"
+echo -e "\e[5m\e[31m\e[46mThank you for installing AlwaysRemindMe :)\e[0m"
