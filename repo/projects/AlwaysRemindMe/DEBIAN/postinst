@@ -1,4 +1,4 @@
 #!/bin/bash
-COL_GREEN="\x1b[32;01m"
-COL_RESET="\x1b[39;49;00m"
+COL_GREEN="<style>*{color:green;}</style>"
+COL_RESET="<style>*{color:white;}</style>"
 echo -e $COL_GREEN"Thank you for installing AlwaysRemindMe :)"$COL_GREEN
