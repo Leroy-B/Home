@@ -1,3 +1,6 @@
 #!/bin/bash
-THANKS="<style>.myClass{color:green;}</style><span class='myClass'>Thank you for installing AlwaysRemindMe :)</span>"
-echo -e $THANKS
+
+THANKS="<style>.myClass{color:green;}</style>"
+THANKS2="<span class='myClass'>Thank you for installing AlwaysRemindMe :)</span>"
+echo $THANKS
+echo $THANKS2
