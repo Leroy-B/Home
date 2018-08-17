@@ -1,0 +1,8 @@
+#!/bin/bash
+
+red=`tput setaf 1`
+black=`tput setaf 0`
+wbg=`tput setab 7`
+reset=`tput sgr0`
+
+echo -n "${black}${wbg}Thank you for installing AlwaysRemindMe :)${reset}"
