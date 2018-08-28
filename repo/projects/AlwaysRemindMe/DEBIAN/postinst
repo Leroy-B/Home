@@ -1,4 +1,4 @@
 #!/bin/bash
 
-THANKS="<h3 style='color:yellow'>Thank you for installing AlwaysRemindMe :)</h3>"
+THANKS="<span style='color:yellow'>Thank you for installing AlwaysRemindMe :)</span>"
 echo -e $THANKS
