@@ -1,4 +1,3 @@
 #!/bin/bash
 
-THANKS="<span style='color:yellow'>Thank you for installing AlwaysRemindMe :)</span>"
-echo -e $THANKS
+echo "<span style='color:yellow;'>Thank you for installing AlwaysRemindMe :)</span>";
