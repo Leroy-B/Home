@@ -1,7 +1,3 @@
 #!/bin/bash
-echo -e "\n\n"
-echo -e "<style>h3{color:yellow;}</style><h3>Thank you for installing AlwaysRemindMe :)</h3>\n\n"
-echo -e "<div></div><style>h3{color:yellow;}</style><h3>Thank you for installing AlwaysRemindMe :)</h3>\n\n"
-echo -e "<div></div></h3>Thank you for installing AlwaysRemindMe :)</h3>\n\n"
-echo -e "<div></div><span style=\"color:yello;\">Thank you for installing AlwaysRemindMe :)</span>\n\n"
-echo -e "<div></div><span style=\"color:yello;\">Thank you for installing AlwaysRemindMe :)\n\n"
+
+echo -e "<div></div><style>h3{color:orange;}</style><h3>Thank you for installing AlwaysRemindMe :)</h3>"
