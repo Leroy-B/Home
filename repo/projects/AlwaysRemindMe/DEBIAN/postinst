@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo -e "<div></div><style>h3{color:orange;}</style><h3>Thank you for installing AlwaysRemindMe :)</h3>"
+echo -e "<style>span{color:orange;}</style><span>Thank you for installing AlwaysRemindMe 😊</span>"
+echo -e "<style>span{color:orange;}</style><span>Please send me some Feedback ✌️</span>"
