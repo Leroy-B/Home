@@ -4,8 +4,8 @@ Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: Text reminder on the home- and lockscreen!
 Depiction: https://leroy-b.github.io/home/repo/description/AlwaysRemindMe.html
-Maintainer: LeroyB
-Author: LeroyB
+Maintainer: LeroyB <leroy.email.inbox@gmail.com>
+Author: LeroyB <leroy.email.inbox@gmail.com>
 Section: Tweaks
 Version: 0.1.0
 Installed-Size: 244
