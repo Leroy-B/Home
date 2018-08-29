@@ -33,7 +33,7 @@
 			<key>placeholder</key>
 			<string>Your Reminder text here</string>
 			<key>default</key>
-			<string>Your text here</string>
+			<string></string>
 			<key>defaults</key>
 			<string>com.leroy.AlwaysRemindMePref</string>
 			<key>key</key>
