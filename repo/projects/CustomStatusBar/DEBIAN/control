@@ -6,5 +6,5 @@ Description: Show date, time, free ram and compass direction in the statusbar!
 Maintainer: LeroyB <leroy.email.inbox@gmail.com>
 Author: LeroyB <leroy.email.inbox@gmail.com>
 Section: Tweaks
-Version: 0.0.2-1+debug
+Version: 0.0.3-1+debug
 Installed-Size: 76
