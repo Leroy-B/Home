@@ -4,6 +4,7 @@ cd deb
 rm -r *.deb
 cd ../projects
 
+dpkg-deb -b -Zgzip "CustomStatusBar"
 dpkg-deb -b -Zgzip "CustomCC"
 dpkg-deb -b -Zgzip "NoPasscodeButtonLightup"
 dpkg-deb -b -Zgzip "CustomSBIconList"
