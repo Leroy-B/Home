@@ -1,6 +1,6 @@
 Package: ch.leroyb.alwaysremindme
 Name: AlwaysRemindMe
-Depends: mobilesubstrate, firmware (>= 6.0)
+Depends: mobilesubstrate, firmware (>= 10.0)
 Architecture: iphoneos-arm
 Description: Small text reminder on the home- and lockscreen!
 Depiction: https://leroy-b.github.io/home/repo/description/AlwaysRemindMe.html
