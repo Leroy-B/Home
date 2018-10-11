@@ -91,19 +91,21 @@
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>2</integer>
+				<integer>3</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
-				<string>Both</string>
+				<string>Home and Lock</string>
 				<string>Homescreen</string>
 				<string>Lockscreen</string>
+				<string>Above all</string>
 			</array>
 			<key>PostNotification</key>
 			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
 		</dict>
 		<!-- Locations end -->
 		<!-- datePicker start -->
-		<!-- <dict>
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
@@ -149,7 +151,7 @@
 			<key>cell</key>
 			<string>PSSegmentCell</string>
 			<key>default</key>
-			<string>Default</string>
+			<integer>1</integer>
 			<key>defaults</key>
 			<string>ch.leroyb.AlwaysRemindMePref</string>
 			<key>key</key>
@@ -160,7 +162,7 @@
 				<integer>2</integer>
 				<integer>3</integer>
 				<integer>4</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -188,7 +190,7 @@
 			<string>Custom 'timer' value:</string>
 			<key>PostNotification</key>
 			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
-		</dict> -->
+		</dict>
 		<!-- datePicker end -->
 		<!-- Pos start -->
 		<dict>
@@ -213,7 +215,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -319,7 +321,7 @@
 				<integer>14</integer>
 				<integer>20</integer>
 				<integer>30</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -361,7 +363,7 @@
 			<array>
 				<integer>1</integer>
 				<integer>2</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -425,7 +427,7 @@
 			<array>
 				<integer>1</integer>
 				<integer>2</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -489,6 +491,8 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>rotation Animation</string>
+			<key>footerText</key>
+			<string>Use '0' as count to repeat the animtion indefinitely.</string>
 		</dict>
 		<dict>
 		 	<key>cell</key>
@@ -546,7 +550,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -574,6 +578,22 @@
 			<key>PostNotification</key>
 			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>Default: 0</string>
+			<key>default</key>
+			<string></string>
+			<key>defaults</key>
+			<string>ch.leroyb.AlwaysRemindMePref</string>
+			<key>key</key>
+			<string>pfRotationCount</string>
+			<key>label</key>
+			<string>Custom 'count' value:</string>
+			<key>PostNotification</key>
+			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
+		</dict>
 		<!-- rotation end -->
 		<!-- shaking Start -->
 		<dict>
@@ -582,7 +602,7 @@
 			<key>label</key>
 			<string>Shake Animation</string>
 			<key>footerText</key>
-			<string>Smaller 'duration' value means faster animation.</string>
+			<string>Smaller 'duration' value means faster animation. Use '0' as count to repeat the animtion indefinitely.</string>
 		</dict>
 		<dict>
 		 	<key>cell</key>
@@ -656,7 +676,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -684,6 +704,22 @@
 			<key>PostNotification</key>
 			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>Default: 0</string>
+			<key>default</key>
+			<string></string>
+			<key>defaults</key>
+			<string>ch.leroyb.AlwaysRemindMePref</string>
+			<key>key</key>
+			<string>pfShakeCount</string>
+			<key>label</key>
+			<string>Custom 'count' value:</string>
+			<key>PostNotification</key>
+			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
+		</dict>
 		<!-- shaking end -->
 		<!-- Blinking Start -->
 		<dict>
@@ -691,6 +727,8 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>blinking Animation</string>
+			<key>footerText</key>
+			<string>Smaller 'speed' value means faster animation. Value is in seconds.</string>
 		</dict>
 		<dict>
 		 	<key>cell</key>
@@ -732,7 +770,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -767,6 +805,8 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>Pulse Animation</string>
+			<key>footerText</key>
+			<string>Smaller 'speed' value means faster animation. Value is in seconds. Use '0' as count to repeat the animtion indefinitely.</string>
 		</dict>
 		<dict>
 		 	<key>cell</key>
@@ -808,7 +848,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -850,7 +890,7 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
-				<integer>-999</integer>
+				<integer>999</integer>
 			</array>
 			<key>validTitles</key>
 			<array>
@@ -878,6 +918,22 @@
 			<key>PostNotification</key>
 			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>Default: 0</string>
+			<key>default</key>
+			<string></string>
+			<key>defaults</key>
+			<string>ch.leroyb.AlwaysRemindMePref</string>
+			<key>key</key>
+			<string>pfPulseCount</string>
+			<key>label</key>
+			<string>Custom 'count' value:</string>
+			<key>PostNotification</key>
+			<string>ch.leroyb.AlwaysRemindMePref.preferencesChanged</string>
+		</dict>
 		<!-- pulse end -->
 		<!-- actions start -->
 		<dict>
@@ -886,14 +942,14 @@
 			<key>label</key>
 			<string>actions</string>
 		</dict>
-		<dict>
+		<!-- <dict>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
 			<string>Apply settings and respring!</string>
 			<key>action</key>
 			<string>respring</string>
-		</dict>
+		</dict> -->
 		<dict>
 			<key>cell</key>
 			<string>PSButtonCell</string>
@@ -909,6 +965,8 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>infos</string>
+			<key>footerText</key>
+			<string>AlwaysRemindMe by LeroyB. Build 1.0.1 \nThursday, 11 October 12018</string>
 		</dict>
 		<dict>
 			<key>icon</key>
