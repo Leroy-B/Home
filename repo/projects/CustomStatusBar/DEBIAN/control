@@ -2,9 +2,10 @@ Package: ch.leroyb.customstatusbar
 Name: CustomStatusBar
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Description: Show date, time, free ram and compass direction in the statusbar!
+Description: For the Statusbar. Removes Carrier text, adds date and free RAM!
+Depiction: https://leroy-b.github.io/home/repo/description/CustomStatusBar.html
 Maintainer: LeroyB <leroy.email.inbox@gmail.com>
 Author: LeroyB <leroy.email.inbox@gmail.com>
 Section: Tweaks
-Version: 0.0.3-1+debug
+Version: 0.1.0
 Installed-Size: 76
