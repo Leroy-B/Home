@@ -1,8 +1,9 @@
-Package: ch.leroyb.customcontrolcenter
-Name: CustomControlCenter
+Package: ch.leroyb.customcontrolcentre
+Name: CustomControlCentre
 Depends: mobilesubstrate, firmware (>= 11.0)
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
+Depiction: bit.ly/CustomControlCentre
 Maintainer: LeroyB <leroy.email.inbox@gmail.com>
 Author: LeroyB <leroy.email.inbox@gmail.com>
 Section: Tweaks
