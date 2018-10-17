@@ -3,7 +3,7 @@ Name: CustomControlCentre
 Depends: mobilesubstrate, firmware (>= 11.0)
 Architecture: iphoneos-arm
 Description: Customise the Control Centre, configured from settings.app.
-Depiction: bit.ly/CustomControlCentre
+Depiction: http://bit.ly/CustomControlCentre
 Maintainer: LeroyB <leroy.email.inbox@gmail.com>
 Author: LeroyB <leroy.email.inbox@gmail.com>
 Section: Tweaks
