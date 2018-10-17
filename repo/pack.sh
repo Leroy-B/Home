@@ -1,4 +1,4 @@
-find /projects \( -name .DS_Store -o -name ._.DS_Store \) -exec rm -f {} \+
+find projects \( -name .DS_Store -o -name ._.DS_Store \) -exec rm -f {} \+
 rm -r *.bz2
 cd deb
 rm -r *.deb
