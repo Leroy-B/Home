@@ -2,9 +2,10 @@ Package: ch.leroyb.customcontrolcentre
 Name: CustomControlCentre
 Depends: mobilesubstrate, firmware (>= 11.0)
 Architecture: iphoneos-arm
-Description: http://bit.ly/CustomControlCentre
+Description: Customise the Control Centre, configured from settings.app.
+Depiction: http://bit.ly/CustomControlCentre
 Maintainer: LeroyB <leroy.email.inbox@gmail.com>
 Author: LeroyB <leroy.email.inbox@gmail.com>
 Section: Tweaks
-Version: 0.0.4
-Installed-Size: 264
+Version: 0.0.3
+Installed-Size: 260

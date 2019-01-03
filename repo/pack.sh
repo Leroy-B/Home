@@ -6,6 +6,7 @@ cd ../projects
 
 dpkg-deb -b -Zgzip "CustomStatusBar"
 dpkg-deb -b -Zgzip "CustomControlCentre"
+dpkg-deb -b -Zgzip "CustomControlCentre1"
 dpkg-deb -b -Zgzip "NoPasscodeButtonLightup"
 dpkg-deb -b -Zgzip "CustomSBIconList"
 dpkg-deb -b -Zgzip "AlwaysRemindMe"
