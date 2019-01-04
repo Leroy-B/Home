@@ -1,8 +1,8 @@
-Origin: A beta repository by Leroy
-Label: A beta repository by Leroy
+Origin: NEW REPO->http://repo.bonventre.ch
+Label: NEW REPO->http://repo.bonventre.ch
 Suite: stable
 Version: 0.1
 Codename: myrepo
 Architectures: iphoneos-arm
 Components: main
-Description: This is a beta repository to make my tweaks available in Cydia.
+Description: NEW REPO->http://repo.bonventre.ch
