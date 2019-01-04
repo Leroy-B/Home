@@ -1,8 +1,9 @@
 find projects \( -name .DS_Store -o -name ._.DS_Store \) -exec rm -f {} \+
 rm -r *.bz2
-cd deb
-rm -r *.deb
-cd ../projects
+#cd deb
+#rm -r *.deb
+#cd ../projects
+cd projects
 
 dpkg-deb -b -Zgzip "CustomStatusBar"
 dpkg-deb -b -Zgzip "CustomControlCentre"
